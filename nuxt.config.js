@@ -31,24 +31,18 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // target: 'static',
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxtjs/google-fonts',
     '@nuxt/postcss8',
-    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // '@nuxt/image'
   ],
-  image: {
-    // Options
-    domains: ['imgur.com/']
-  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
