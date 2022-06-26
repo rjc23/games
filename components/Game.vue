@@ -1,7 +1,7 @@
-<template lang="">
+<template>
     <div class="game">
         <a :href="game.link" target="_blank">
-            <img :src="require(`./../assets/images/${game.img}`)"></img>
+            <nuxt-img :src="game.img"></nuxt-img>
         </a>
         <h2>{{ game.title }}</h2>
         <p>{{ game.desc }}</p>
@@ -17,7 +17,7 @@
             game: {
                 type: Object as PropType<Game>
             }
-        }
+        },
     }
 </script>
 

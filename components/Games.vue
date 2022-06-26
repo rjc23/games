@@ -9,7 +9,7 @@ import { games } from "./../data/data"
 import Game from "./Game.vue"
 export default {
     data() {
-        console.log(games)
+        // console.log(games)
         return {
             gamesList: games
         };
