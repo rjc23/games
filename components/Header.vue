@@ -6,8 +6,11 @@
         <div id="stars3"></div>
         <div id="title">
         <div class="header">
-            <h1>
+            <h1 class="desktop">
                 <span class="games">GAMES.</span>ryancarmody
+            </h1>
+            <h1 class="mobile">
+                <span class="games">GAMES.<br></span>ryancarmody
             </h1>
         </div>
         <br/>
@@ -21,19 +24,20 @@ export default {
     
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
+    @import './../assets/scss/responsive.scss';
     // n is number of stars required
     @function multiple-box-shadow ($n) {
-    $value: '#{random(2000)}px #{random(2000)}px #f87575';
+    $value: '#{random(4000)}px #{random(4000)}px #f87575';
     @for $i from 2 through $n {
-        $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+        $value: '#{$value} , #{random(4000)}px #{random(4000)}px #FFF';
     }
 
     @return unquote($value);
     }
-    $shadows-small: multiple-box-shadow(700);
-    $shadows-medium: multiple-box-shadow(200);
-    $shadows-big: multiple-box-shadow(100);
+    $shadows-small: multiple-box-shadow(3000);
+    $shadows-medium: multiple-box-shadow(2000);
+    $shadows-big: multiple-box-shadow(500);
 
     .wrapper {
     height: 300px;
@@ -51,18 +55,32 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            font-size: 36px;
+        }
         h1 {
             z-index: 5;
             color: white;
             font-family: 'Inter';
             font-weight: 900;
-            font-size: 56px;
+            font-size: 58px;
             text-shadow: 2px 2px 20px rgba(255,255,255,0.40);
             .games {
                 background: -webkit-linear-gradient(315deg,#f87575 25%,#647eff);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;            
+            }
+        }
+        @include respond-to(tablet) {
+            .desktop {
+                display: block;
+            }
+            .mobile {
+                display: none;
             }
         }
     }

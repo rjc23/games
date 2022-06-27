@@ -15,13 +15,20 @@
   })
 </script>
 
-<style>
+<style lang="scss">
+  @import './../assets/scss/responsive.scss';
+
   html, body {
     margin: 0;
     padding: 0;
   }
   .content {
-    margin: 0 150px;
-    margin-top: 80px;
+
+    margin-top: 40px;
+    @include respond-to(mobile) {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 80px;
+    }
   }
 </style>
