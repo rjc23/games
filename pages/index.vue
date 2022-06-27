@@ -23,7 +23,6 @@
     padding: 0;
   }
   .content {
-
     margin-top: 40px;
     @include respond-to(mobile) {
       margin-left: 20px;

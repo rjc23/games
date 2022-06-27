@@ -1,5 +1,9 @@
 <template>
 <div>
+    <nav>
+        <a href="https://ryancarmody.dev">01. <span>Home</span></a>
+        <!-- <a href="https://ryancarmody.dev">02. <span>Blog</span></a> -->
+    </nav>
     <div class="wrapper">
         <div id="stars"></div>
         <div id="stars2"></div>
@@ -26,6 +30,24 @@ export default {
 </script>
 <style lang="scss" scoped>
     @import './../assets/scss/responsive.scss';
+    
+    nav {
+        position: absolute;
+        right: 0;
+        margin: 20px 80px;
+        a {
+            font-family: 'Space Mono';
+            color: #f87575;
+            font-size: 12px;
+            text-decoration: none;
+            margin-left: 20px;
+            span {
+                color: white;
+                font-size: 14px;
+            }
+        }
+    }
+
     // n is number of stars required
     @function multiple-box-shadow ($n) {
     $value: '#{random(4000)}px #{random(4000)}px #f87575';
