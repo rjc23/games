@@ -5,7 +5,7 @@ export const games: Game[] = [
         id: 1,
         title: "WhereTaken",
         img: "wheretaken.png",
-        desc: "Guess the country from a photo. New game daily.",
+        desc: "Guess the country or region from a photo. New game daily.",
         link: "https://wheretaken.com"
     },
     {
