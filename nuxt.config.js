@@ -55,7 +55,6 @@ export default {
   googleFonts: {
     families: {
       'Space+Mono': [400, 700],
-      'Merriweather+Sans': true,
       'Inter': [400, 900]
     }
   }
