@@ -35,8 +35,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    '@nuxtjs/google-fonts',
-    '@nuxt/postcss8',
     'nuxt-compress'
   ],
 
