@@ -4,7 +4,7 @@
             <a :href="game.link" target="_blank">
                 <img :src="require(`./../assets/images/${game.img}`)"></img>
             </a>
-            <h2>{{ game.title }}</h2>
+            <h2 style="text-align: center;">{{ game.title }}</h2>
             <p>{{ game.desc }}</p>
         </div>
     </div>
