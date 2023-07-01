@@ -10,10 +10,10 @@ export const games: Game[] = [
     },
     {
         id: 2,
-        title: "WhereTaken",
-        img: "wheretaken.png",
-        desc: "Guess the country or region from a photo. New game daily.",
-        link: "https://wheretaken.com"
+        title: "Searchle",
+        img: "searchle.png",
+        desc: "How does Google autocomplete this search?",
+        link: "https://searchle.net"
     },
     {
         id: 3,
@@ -21,5 +21,12 @@ export const games: Game[] = [
         img: "snake.jpeg",
         desc: "Play the classic mobile Snake game for free online.",
         link: "https://playretrosnake.com"
-    }
+    },
+    {
+        id: 4,
+        title: "WhereTaken",
+        img: "wheretaken.png",
+        desc: "Guess the country or region from a photo. New game daily.",
+        link: "https://wheretaken.teuteuf.fr"
+    },
 ]
